@@ -1,11 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
+import { AtBadge, AtButton } from 'taro-ui';
 import './App.css';
+// import Taro from '@tarojs/taro-h5'
+
+console.log('AtButton: ', AtButton);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <AtBadge value={123} /> */}
+      2222
+      <AtButton>123</AtButton>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -18,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
