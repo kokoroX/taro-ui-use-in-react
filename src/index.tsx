@@ -4,20 +4,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// console.log();
 
 /**
  * taro-h5的polyfill
  * 手动注册web components
  * 手动引入web componts的样式
  */
-// import { applyPolyfills, defineCustomElements } from '@tarojs/components/loader'
-// import '@tarojs/components/dist/taro-components/taro-components.css'
-// // (window as any).ENABLE_INNER_HTML = true
+import { applyPolyfills, defineCustomElements } from '@tarojs/components-origin/loader'
+import '@tarojs/components/dist/taro-components/taro-components.css'
+// (window as any).ENABLE_INNER_HTML = true
 
-// applyPolyfills().then(() => {
-//   defineCustomElements(window)
-// })
+applyPolyfills().then(() => {
+  defineCustomElements(window)
+})
 
 ReactDOM.render(
   <React.StrictMode>

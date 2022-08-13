@@ -1,5 +1,4 @@
 /* eslint-disable import/first */
-process.env.DEMO = '123'
 require("dotenv-cra").config();
 // dotenvConfig();
 import CracoAlias from "craco-alias";

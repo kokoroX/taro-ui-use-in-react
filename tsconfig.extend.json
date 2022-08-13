@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "taro-ui-h5": ["./node_modules/taro-ui/dist/h5"]
+      "@tarojs/components-react": [
+        "./node_modules/@tarojs/components/dist-h5/react"
+      ],
     }
   }
 }

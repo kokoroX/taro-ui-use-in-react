@@ -1,0 +1,24 @@
+diff --git a/dist/index.esm.js b/dist/index.esm.js
+index 20411926cd933900f62f6e05780ba9c2acd28d55..e404bc8939dd6f6448860f48f971f91d7bbd46ee 100644
+--- a/dist/index.esm.js
++++ b/dist/index.esm.js
+@@ -1,5 +1,5 @@
+ import React, { Component } from 'react';
+-import { View, Text, OpenData, Image, Button, Form, Switch, ScrollView, Label, Input, Textarea, Slider, MovableArea, MovableView, Swiper, SwiperItem, Picker } from '@tarojs/components';
++import { View, Text, OpenData, Image, Button, Form, Switch, ScrollView, Label, Input, Textarea, Slider, MovableArea, MovableView, Swiper, SwiperItem, Picker } from '@tarojs/components-react';
+ import Taro from '@tarojs/taro';
+ 
+ /*! *****************************************************************************
+diff --git a/dist/index.js b/dist/index.js
+index 867149e9ac08b6cfb6fd48afad513694851fb816..93ad778e977f5e6fa5fb225a2d4301c92e014cd2 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -3,7 +3,7 @@
+ Object.defineProperty(exports, '__esModule', { value: true });
+ 
+ var React = require('react');
+-var components = require('@tarojs/components');
++var components = require('@tarojs/components-react');
+ var Taro = require('@tarojs/taro');
+ 
+ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
