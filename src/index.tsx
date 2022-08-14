@@ -10,10 +10,11 @@ import reportWebVitals from './reportWebVitals';
  * 手动注册web components
  * 手动引入web componts的样式
  */
-import { applyPolyfills, defineCustomElements } from '@tarojs/components-origin/loader'
+import { init } from '@antmjs/vantui'
+import { applyPolyfills, defineCustomElements } from '@tarojs/components/loader'
 import '@tarojs/components/dist/taro-components/taro-components.css'
-// (window as any).ENABLE_INNER_HTML = true
 
+init()
 applyPolyfills().then(() => {
   defineCustomElements(window)
 })

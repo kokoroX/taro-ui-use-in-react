@@ -7,7 +7,7 @@ index 4d134a0aa07c5534ad87af073b341858ad9ebec4..bc75e88e303112980d4cff937c40376a
  // Grab NODE_ENV and REACT_APP_* environment variables and prepare them to be
  // injected into the application via DefinePlugin in webpack configuration.
 -const REACT_APP = /^REACT_APP_/i;
-+const REACT_APP = /^REACT_APP_|TARO_/i;
++const REACT_APP = /^REACT_APP_|TARO_|LIBRARY_/i;
  
  function getClientEnvironment(publicUrl) {
    const raw = Object.keys(process.env)

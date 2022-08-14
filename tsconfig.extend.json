@@ -2,9 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@tarojs/components-react": [
-        "./node_modules/@tarojs/components/dist-h5/react"
+      "@tarojs/components/dist/taro-components/taro-components.css": [
+        "./node_modules/@tarojs/components/dist/taro-components/taro-components.css"
       ],
+      "@tarojs/components/loader": [
+        "./node_modules/@tarojs/components/loader"
+      ],
+      "@tarojs/components": [
+        "./node_modules/@tarojs/components/dist-h5/react"
+      ]
     }
   }
 }
