@@ -9,7 +9,7 @@
         "./node_modules/@tarojs/components/loader"
       ],
       "@tarojs/components": [
-        "./node_modules/@tarojs/components/dist-h5/react"
+        "./node_modules/@tarojs/components/dist-h5/react/index.js"
       ]
     }
   }

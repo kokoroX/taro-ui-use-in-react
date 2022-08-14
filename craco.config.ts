@@ -12,21 +12,12 @@ import webpack from 'webpack';
 // manage relative paths to packages
 const appDirectory = fs.realpathSync(process.cwd());
 const resolvePackage = relativePath => path.resolve(appDirectory, relativePath);
-// console.log(`resolvePackage('node_modules/taro-ui'): `, resolvePackage('node_modules/taro-ui'));
-console.log('process.env: ', process.env);
 
 const cracoConfig = {
   plugins: [
     {
       plugin: CracoAliasPlugin,
-      options: {
-        source: "tsconfig",
-        // baseUrl SHOULD be specified
-        // plugin does not take it from tsconfig
-        baseUrl: ".",
-        // tsConfigPath should point to the file where "baseUrl" and "paths" are specified
-        tsConfigPath: "./tsconfig.extend.json"
-      }
+      options: {}
     },
     {
       plugin: cracoBabelLoader,

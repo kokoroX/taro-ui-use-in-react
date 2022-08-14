@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@antmjs/vantui/lib/index.css'
 
 /**
  * taro-h5的polyfill
@@ -13,6 +14,8 @@ import reportWebVitals from './reportWebVitals';
 import { init } from '@antmjs/vantui'
 import { applyPolyfills, defineCustomElements } from '@tarojs/components/loader'
 import '@tarojs/components/dist/taro-components/taro-components.css'
+
+console.log('applyPolyfills: ', applyPolyfills);
 
 init()
 applyPolyfills().then(() => {
